@@ -54,3 +54,9 @@
   height: 350px;
   background-color: white;
 }
+
+.logback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
