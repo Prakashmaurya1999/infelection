@@ -33,7 +33,12 @@ const LoginSignup = () => {
 
         <div className='submit-container'>
             <div className={action==='Login'?"submit gray":"submit"} onClick={()=>{setAction("Sign Up")}}>Signup</div>
-            <div className={action==="Sign Up"?"submit gray":"submit"} onClick={()=>{setAction("Login")}}>login</div>
+            <div className={action==="Sign Up"?"submit gray":"submit"} 
+                onClick={(e)=>{setAction("Login");
+                            console.log(e)
+                        }}
+        >
+            login</div>
         </div>
       
     </div>
