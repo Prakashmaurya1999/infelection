@@ -22,7 +22,7 @@
 
 } */
 
-.bg {
+/* .bg {
   background-color: rgb(210, 243, 243);
   height: auto;
 
@@ -59,4 +59,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+} */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: aqua;
+  position: sticky;
+  top: 0;
+}
+.navmenu{
+  display: flex;
+  gap: 20px;
+}
+footer{
+  background-color: aquamarine;
+  height: 200px;
+  width: 100%;
+}
+select{
+  all: unset;
 }
