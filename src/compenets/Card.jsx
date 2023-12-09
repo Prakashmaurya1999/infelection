@@ -6,7 +6,7 @@ const Card = (props) => {
   return (
  
       <div className={style.card}>
-        <img src={`https://image.tmdb.org/t/p/original${props?.movie?.poster_path}`} 
+        <img src={`https://image.tmdb.org/t/p/w500${props?.movie?.poster_path}`} 
               alt={props?.movie?.original_title}
         />
         <h3>{props?.movie?.original_title}</h3>
