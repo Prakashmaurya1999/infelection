@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import "./App.css";
 import Drop from "./compenets/header";
 import Generic from "./compenets/Geners";
+import MoviesDetails from "./compenets/header/MoviesDetails";
 
 const App = () => {
   const [fetchDrop, setDrop] = useState([]);
@@ -42,12 +43,27 @@ const App = () => {
           <Link to="/contact">Contact</Link>
           <Drop fetchDrop={fetchDrop} />
         </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="22"
+          height="22"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
       </header>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Contact />} />
-        <Route path="/contact" element={<About />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="*" element={<All />} /> */}
         <Route path="/movies/gen/:id" element={<Generic />} />
+        <Route path="/MoviesDetails/:id" element={<MoviesDetails />} />
       </Routes>
       <footer>THis is footer</footer>
     </>
